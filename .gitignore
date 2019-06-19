@@ -195,3 +195,6 @@ $RECYCLE.BIN/
 .nfs*
 
 /.php_cs.cache
+/test_output.json
+/.phpunit.result.cache
+/log/

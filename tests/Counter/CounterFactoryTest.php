@@ -16,26 +16,18 @@ use PHPUnit\Framework\TestCase;
  */
 class CounterFactoryTest extends TestCase
 {
+    /**
+     * @covers \App\Counter\Factory\CounterFactory
+     * @covers \App\Counter\Factory\CounterFactory::getCounter
+     */
     public function testGetCounter(): void
     {
-        $counter = CounterFactory::getCounter('ololo', 5);
-        $this->assertNull($counter, 'Wrong counter class!');
+        $counter = CounterFactory::getCounter(AbstractModel::TYPE_PRODUCT, 5);
+        $this->assertInstanceOf(ProductCounter::class, $counter, 'Wrong counter class!');
 
         AbstractCounter::free();
 
         $counter = CounterFactory::getCounter(AbstractModel::TYPE_PAGE, 5);
         $this->assertInstanceOf(PageCounter::class, $counter, 'Wrong counter class!');
-
-        AbstractCounter::free();
-
-        $counter = CounterFactory::getCounter(AbstractModel::TYPE_PRODUCT, 5);
-        $this->assertInstanceOf(ProductCounter::class, $counter, 'Wrong counter class!');
-    }
-
-    public function testIsFirstItem()
-    {
-        AbstractCounter::free();
-        $counter = CounterFactory::getCounter(AbstractModel::TYPE_PRODUCT, 5);
-        $this->assertTrue($counter->isFirstItem());
     }
 }

@@ -1,0 +1,88 @@
+[{
+  "name": "Test Name",
+  "manufacturerSku": "testsku",
+  "images": [
+    "img1.png",
+    "img2.png"
+  ],
+  "skus": [
+    {
+      "size": "10",
+      "price": "100.00"
+    },
+    {
+      "size": "11",
+      "price": "100.00"
+    },
+    {
+      "size": "12",
+      "price": ""
+    }
+  ]
+},
+  {
+    "name": "Test Name",
+    "manufacturerSku": "testsku",
+    "images": [
+      "img1.png",
+      "img2.png"
+    ],
+    "skus": [
+      {
+        "size": "10",
+        "price": "100.00"
+      },
+      {
+        "size": "11",
+        "price": "100.00"
+      },
+      {
+        "size": "12",
+        "price": ""
+      }
+    ]
+  },
+  {
+    "name": "Test Name",
+    "manufacturerSku": "testsku",
+    "images": [
+      "img1.png",
+      "img2.png"
+    ],
+    "skus": [
+      {
+        "size": "10",
+        "price": "100.00"
+      },
+      {
+        "size": "11",
+        "price": "100.00"
+      },
+      {
+        "size": "12",
+        "price": ""
+      }
+    ]
+  },
+  {
+    "name": "Test Name",
+    "manufacturerSku": "testsku",
+    "images": [
+      "img1.png",
+      "img2.png"
+    ],
+    "skus": [
+      {
+        "size": "10",
+        "price": "100.00"
+      },
+      {
+        "size": "11",
+        "price": "100.00"
+      },
+      {
+        "size": "12",
+        "price": ""
+      }
+    ]
+  }]

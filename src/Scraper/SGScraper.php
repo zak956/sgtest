@@ -53,8 +53,10 @@ class SGScraper
 
     /**
      * @param OutputInterface $output
+     *
+     * @return true
      */
-    public function run(OutputInterface &$output): void
+    public function run(OutputInterface &$output): bool
     {
         $output->write('[');
         $httpClient = $this->client;
@@ -90,5 +92,7 @@ class SGScraper
         $promise->wait();
 
         $output->writeln(']');
+
+        return true;
     }
 }
